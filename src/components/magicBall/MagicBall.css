@@ -1,0 +1,16 @@
+body :has(.project-container) {
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/image/cosmos-1853491_1920.jpg") center/cover no-repeat;
+}
+
+.project-container {
+  position: relative;
+}
+
+.ball-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 60%);
+}

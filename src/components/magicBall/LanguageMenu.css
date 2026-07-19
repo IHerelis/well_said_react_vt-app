@@ -1,0 +1,25 @@
+.language-menu {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding-block: 20px;
+}
+
+.language-menu button {
+  width: 70px;
+  background-color: orange;
+  color: white;
+  padding: 8px;
+  border-radius: 10px 10px 25px 25px;
+  transition: 0.3s;
+}
+
+.language-menu button:hover {
+  transform: scale(1.05);
+  border-radius: 10px;
+}
+
+button.language-active {
+  background-color: #069789;
+  border-radius: 10px;
+}
