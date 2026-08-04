@@ -3,10 +3,11 @@
   gap: 20px;
   justify-content: center;
   padding-block: 20px;
+  padding-inline: 10px;
 }
 
 .language-menu button {
-  width: 70px;
+  min-width: 70px;
   background-color: orange;
   color: white;
   padding: 8px;
@@ -22,4 +23,14 @@
 button.language-active {
   background-color: #069789;
   border-radius: 10px;
+}
+
+@media (max-width: 373.99px) {
+  .language-menu {
+    gap: 15px;
+  }
+
+  .language-menu button {
+    min-width: 63px;
+  }
 }

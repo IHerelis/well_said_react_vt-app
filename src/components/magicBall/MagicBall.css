@@ -13,4 +13,5 @@ body :has(.project-container) {
   top: 50%;
   left: 50%;
   transform: translate(-50%, 60%);
+  padding-inline: 20px;
 }
