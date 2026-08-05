@@ -1,5 +1,6 @@
 import './App.css'
-import MagicBall from './components/magicBall/MagicBall'
+import HomePage from './components/homePage/HomePage'
+// import MagicBall from './components/magicBall/MagicBall'
 
 function App() {
   
@@ -7,7 +8,8 @@ function App() {
   return (
     <>
       <div className='main-wrapper'>
-        <MagicBall />
+        <HomePage />
+        {/* <MagicBall /> */}
       </div>
     </>
   )

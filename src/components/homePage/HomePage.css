@@ -1,0 +1,41 @@
+.home__container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  /* grid-template-rows: 1fr; */
+  grid-template-areas: 
+    "quotes foresight"
+  ;
+}
+
+.quotes-block {
+  grid-area: quotes;
+  /* width: 100%;
+  min-height: 100%; */
+}
+
+.foresight-block {
+  grid-area: foresight;
+  /* width: 100%;
+  min-height: 100%; */
+}
+
+
+@media (max-width: 1278.99px) {
+  .home__container {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "quotes"
+      "foresight"
+    ;
+  }
+
+  .foresight-block {
+    min-height: 650px;
+  }
+
+  /* .quotes-block {
+    display: none;
+  } */
+}

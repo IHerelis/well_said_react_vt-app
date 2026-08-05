@@ -23,10 +23,12 @@ const MagicBall = () => {
 
 
   return (
-    <div className='project-container'>
-      <LanguageMenu languages={languages} lang={lang} updateLanguage={updateLanguage} />
-      <div className='ball-container'>
-        <Ball message={answer} updateAnswer={updateAnswer} />
+    <div className='magic-ball__container'>
+      <div className='magic-ball__board'>
+        <LanguageMenu languages={languages} lang={lang} updateLanguage={updateLanguage} />
+        <div className='ball__container'>
+          <Ball message={answer} updateAnswer={updateAnswer} />
+        </div>
       </div>
     </div>
   );
