@@ -10,11 +10,16 @@ const MagicQuote = () => {
     const getQuotes = async () => {
       const response = await http.get('/quotes');
       // return response.data;
-      setQuotes(response.data.quotes);
+      setQuotes(response.data.quotes);           // https://dummyjson.com
+      // setQuotes(response.data.data.quoteText);   // https://quote-garden.onrender.com/api/v3
+      // setQuotes(response.data.results.content);     // https://api.quotable.io
+
+      // console.log("response", response.data.quotes);
     };
 
     // setQuotes(getQuotes());
     getQuotes();
+
     // console.log("quotes", quotes);
   }, []);
 
@@ -29,7 +34,12 @@ const MagicQuote = () => {
             {quotes.length > 0 &&
               quotes.map((item, index) => (
                 <div key={index} className='quote__field'>
-                  {item.quote}
+                  <blockquote className='quote__field__text'>
+                    {item.quote}
+                  </blockquote>
+                  <cite className='quote__field__author'>
+                    {item.author}
+                  </cite>
                 </div>
               ))
             }

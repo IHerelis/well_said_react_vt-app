@@ -16,10 +16,19 @@
   font-size: 18px;
 }
 
-.quotes__list :not(:last-child) {
+.quotes__list >:not(:last-child) {
   margin-bottom: 10px;
 }
 
 .quote__field {
   box-shadow: 2px 2px 1px 1px gray;
+}
+
+.quote__field__text {
+  padding-left: 10px;
+  margin-bottom: 3px;
+}
+
+.quote__field__author {
+  padding-left: 24px;
 }

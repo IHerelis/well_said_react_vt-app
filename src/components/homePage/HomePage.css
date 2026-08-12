@@ -26,8 +26,8 @@
   .home__container {
     grid-template-columns: 1fr;
     grid-template-areas: 
-      "quotes"
       "foresight"
+      "quotes"
     ;
   }
 
